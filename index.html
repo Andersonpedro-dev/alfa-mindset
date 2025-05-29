@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfa Mindset | Reprograme Sua Mente Para o Sucesso</title>
+    <meta
+      name="description"
+      content="Desperte seu potencial com Alfa Mindset — o e-book que vai reprogramar sua mente para o sucesso absoluto."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #fff;
+      }
+      header {
+        text-align: center;
+        padding: 60px 20px 20px;
+      }
+      h1 {
+        font-size: 3.2em;
+        margin-bottom: 10px;
+        color: #22c55e;
+      }
+      h2 {
+        color: #22c55e;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.3em;
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+      .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      .btn {
+        background: #22c55e;
+        padding: 15px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.1em;
+        color: #000;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #16a34a;
+      }
+      section {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+      .testimonials {
+        background: #0f172a;
+        padding: 40px 20px;
+        border-top: 1px solid #334155;
+      }
+      .testimonial {
+        background: #1e293b;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: #cbd5e1;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        text-align: left;
+      }
+      .testimonial img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .testimonial-content {
+        flex: 1;
+      }
+      .testimonial-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        color: #22c55e;
+      }
+      .testimonial-text {
+        margin-top: 5px;
+        font-style: italic;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        max-width: 500px;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1em;
+      }
+      form textarea {
+        resize: vertical;
+        height: 120px;
+      }
+      footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 0.9em;
+        color: #cbd5e1;
+      }
+
+      /* Botão flutuante */
+      #chat-toggle {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #22c55e;
+        color: #000;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        z-index: 999;
+      }
+
+      /* Iframe flutuante do chat */
+      #chat-iframe {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 400px;
+        height: 550px;
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        z-index: 998;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      @media (max-width: 500px) {
+        #chat-iframe {
+          width: 90%;
+          right: 5%;
+          height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Transforme Sua Mente. Transforme Sua Vida.</h1>
+      <p>
+        <strong>VOCÊ</strong> nasceu para liderar, conquistar e vencer. O Alfa
+        Mindset é o guia que faltava para despertar todo o seu potencial e fazer
+        você sair do modo sobrevivência para o modo conquista.
+      </p>
+      <div class="btns">
+        <a href="#" class="btn">QUERO ME TRANSFORMAR AGORA</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Por Que o Alfa Mindset Funciona?</h2>
+      <p>
+        Você vai aprender os exatos gatilhos mentais, estratégias de foco,
+        disciplina e autoconfiança que os grandes líderes e empreendedores
+        utilizam diariamente. Simples, direto e poderoso.
+      </p>
+    </section>
+
+    <section class="testimonials">
+      <h2>O Que Estão Dizendo</h2>
+
+      <div class="testimonial">
+        <img
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          alt="Rodrigo S"
+        />
+        <div class="testimonial-content">
+          <div class="testimonial-header">Rodrigo S.</div>
+          <div class="testimonial-text">
+            "Em menos de uma semana comecei a tomar decisões mais firmes e a me
+            sentir no controle da minha vida. Esse e-book é ouro puro!"
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <img
+          src="https://randomuser.me/api/portraits/women/45.jpg"
+          alt="Camila T"
+        />
+        <div class="testimonial-content">
+          <div class="testimonial-header">Camila T.</div>
+          <div class="testimonial-text">
+            "A parte de mentalidade de riqueza me ajudou a mudar meu
+            comportamento com dinheiro. Já estou colhendo resultados!"
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <img
+          src="https://randomuser.me/api/portraits/men/65.jpg"
+          alt="Henrique L"
+        />
+        <div class="testimonial-content">
+          <div class="testimonial-header">Henrique L.</div>
+          <div class="testimonial-text">
+            "Nunca vi um conteúdo tão prático e direto. Aplicável desde o
+            primeiro dia. Vale cada centavo!"
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Entre em Contato</h2>
+      <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Seu e-mail"
+          required
+        /><br />
+        <textarea name="message" placeholder="Sua mensagem" required></textarea
+        ><br />
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <!-- Chatbot Iframe (inicialmente escondido) -->
+    <iframe
+      id="chat-iframe"
+      src="https://www.chatbase.co/chatbot-iframe/8s25ll_WHKdn8BYbSSFnV"
+    ></iframe>
+
+    <!-- Botão flutuante -->
+    <button id="chat-toggle" title="Abrir Chatbot">
+      <i class="fas fa-robot"></i>
+    </button>
+
+    <footer>&copy; 2025 Alfa Mindset. Todos os direitos reservados.</footer>
+
+    <script>
+      const btn = document.getElementById('chat-toggle')
+      const chat = document.getElementById('chat-iframe')
+
+      btn.addEventListener('click', () => {
+        if (chat.style.display === 'none' || chat.style.display === '') {
+          chat.style.display = 'block'
+        } else {
+          chat.style.display = 'none'
+        }
+      })
+    </script>
+  </body>
+</html>
