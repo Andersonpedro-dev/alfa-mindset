@@ -3,278 +3,556 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alfa Mindset | Reprograme Sua Mente Para o Sucesso</title>
-    <meta
-      name="description"
-      content="Desperte seu potencial com Alfa Mindset — o e-book que vai reprogramar sua mente para o sucesso absoluto."
-    />
+    <title>Do Zero ao Sucesso em 30 Dias - Transforme Sua Vida Agora!</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Inter', sans-serif;
-        background: linear-gradient(135deg, #0f172a, #1e293b);
-        color: #fff;
-      }
-      header {
-        text-align: center;
-        padding: 60px 20px 20px;
-      }
-      h1 {
-        font-size: 3.2em;
-        margin-bottom: 10px;
-        color: #22c55e;
-      }
-      h2 {
-        color: #22c55e;
-        font-size: 2em;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 1.3em;
-        max-width: 700px;
-        margin: 0 auto 30px;
-      }
-      .btns {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-      }
-      .btn {
-        background: #22c55e;
-        padding: 15px 30px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 1.1em;
-        color: #000;
-        transition: 0.3s;
-        border: none;
-        cursor: pointer;
-      }
-      .btn:hover {
-        background: #16a34a;
-      }
-      section {
-        max-width: 900px;
-        margin: 60px auto;
-        padding: 0 20px;
-        text-align: center;
-      }
-      .testimonials {
-        background: #0f172a;
-        padding: 40px 20px;
-        border-top: 1px solid #334155;
-      }
-      .testimonial {
-        background: #1e293b;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        color: #cbd5e1;
-        display: flex;
-        align-items: flex-start;
-        gap: 15px;
-        text-align: left;
-      }
-      .testimonial img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      .testimonial-content {
-        flex: 1;
-      }
-      .testimonial-header {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: bold;
-        color: #22c55e;
-      }
-      .testimonial-text {
-        margin-top: 5px;
-        font-style: italic;
-      }
-      form input,
-      form textarea {
-        width: 100%;
-        max-width: 500px;
-        padding: 12px;
-        margin-bottom: 15px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1em;
-      }
-      form textarea {
-        resize: vertical;
-        height: 120px;
-      }
-      footer {
-        text-align: center;
-        padding: 30px;
-        font-size: 0.9em;
-        color: #cbd5e1;
-      }
-
-      /* Botão flutuante */
-      #chat-toggle {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background-color: #22c55e;
-        color: #000;
-        border: none;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        font-size: 26px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-        z-index: 999;
-      }
-
-      /* Iframe flutuante do chat */
-      #chat-iframe {
-        display: none;
-        position: fixed;
-        bottom: 100px;
-        right: 30px;
-        width: 400px;
-        height: 550px;
-        border: none;
-        border-radius: 12px;
-        overflow: hidden;
-        z-index: 998;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-      }
-
-      @media (max-width: 500px) {
-        #chat-iframe {
-          width: 90%;
-          right: 5%;
-          height: 500px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Transforme Sua Mente. Transforme Sua Vida.</h1>
-      <p>
-        <strong>VOCÊ</strong> nasceu para liderar, conquistar e vencer. O Alfa
-        Mindset é o guia que faltava para despertar todo o seu potencial e fazer
-        você sair do modo sobrevivência para o modo conquista.
-      </p>
-      <div class="btns">
-        <a href="#" class="btn">QUERO ME TRANSFORMAR AGORA</a>
-      </div>
-    </header>
-
-    <section>
-      <h2>Por Que o Alfa Mindset Funciona?</h2>
-      <p>
-        Você vai aprender os exatos gatilhos mentais, estratégias de foco,
-        disciplina e autoconfiança que os grandes líderes e empreendedores
-        utilizam diariamente. Simples, direto e poderoso.
-      </p>
-    </section>
-
-    <section class="testimonials">
-      <h2>O Que Estão Dizendo</h2>
-
-      <div class="testimonial">
-        <img
-          src="https://randomuser.me/api/portraits/men/32.jpg"
-          alt="Rodrigo S"
-        />
-        <div class="testimonial-content">
-          <div class="testimonial-header">Rodrigo S.</div>
-          <div class="testimonial-text">
-            "Em menos de uma semana comecei a tomar decisões mais firmes e a me
-            sentir no controle da minha vida. Esse e-book é ouro puro!"
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="highlight">PARE DE SONHAR</span><br />
+              E COMECE A <span class="success">VENCER!</span>
+            </h1>
+            <h2 class="hero-subtitle">
+              Descubra os Segredos dos Livros Mais Poderosos do Mundo e
+              Transforme Sua Vida em Apenas 30 Dias
+            </h2>
+            <div class="social-proof">
+              <i class="fas fa-users"></i>
+              <span
+                >Mais de <strong>50.000 pessoas</strong> já transformaram suas
+                vidas!</span
+              >
+            </div>
+            <div class="cta-container">
+              <a href="#oferta" class="cta-button pulse">
+                <i class="fas fa-rocket"></i>
+                QUERO TRANSFORMAR MINHA VIDA AGORA!
+              </a>
+              <p class="guarantee">
+                ✅ Garantia de 30 dias ou seu dinheiro de volta
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img
-          src="https://randomuser.me/api/portraits/women/45.jpg"
-          alt="Camila T"
-        />
-        <div class="testimonial-content">
-          <div class="testimonial-header">Camila T.</div>
-          <div class="testimonial-text">
-            "A parte de mentalidade de riqueza me ajudou a mudar meu
-            comportamento com dinheiro. Já estou colhendo resultados!"
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img
-          src="https://randomuser.me/api/portraits/men/65.jpg"
-          alt="Henrique L"
-        />
-        <div class="testimonial-content">
-          <div class="testimonial-header">Henrique L.</div>
-          <div class="testimonial-text">
-            "Nunca vi um conteúdo tão prático e direto. Aplicável desde o
-            primeiro dia. Vale cada centavo!"
+          <div class="hero-image">
+            <img
+              src="ebook_sucesso_capa.png"
+              alt="Capa do E-book Do Zero ao Sucesso em 30 Dias"
+              class="book-cover"
+            />
+            <div class="floating-elements">
+              <div class="element element-1">💰</div>
+              <div class="element element-2">🚀</div>
+              <div class="element element-3">⭐</div>
+              <div class="element element-4">💎</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Entre em Contato</h2>
-      <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-        <input type="text" name="name" placeholder="Seu nome" required /><br />
-        <input
-          type="email"
-          name="email"
-          placeholder="Seu e-mail"
-          required
-        /><br />
-        <textarea name="message" placeholder="Sua mensagem" required></textarea
-        ><br />
-        <button type="submit" class="btn">Enviar Mensagem</button>
-      </form>
+    <!-- PROBLEMA SECTION -->
+    <section class="problema">
+      <div class="container">
+        <h2 class="section-title">Você Está Cansado de...</h2>
+        <div class="problemas-grid">
+          <div class="problema-item">
+            <i class="fas fa-times-circle"></i>
+            <h3>Trabalhar Duro Sem Resultados?</h3>
+            <p>
+              Você se mata de trabalhar, mas no final do mês sobra pouco ou
+              nada. A sensação é de estar correndo em uma esteira, sem sair do
+              lugar.
+            </p>
+          </div>
+          <div class="problema-item">
+            <i class="fas fa-times-circle"></i>
+            <h3>Ver Outros Prosperando Enquanto Você Luta?</h3>
+            <p>
+              Pessoas ao seu redor alcançam o sucesso enquanto você continua na
+              mesma situação, se perguntando qual é o segredo delas.
+            </p>
+          </div>
+          <div class="problema-item">
+            <i class="fas fa-times-circle"></i>
+            <h3>Não Saber Por Onde Começar?</h3>
+            <p>
+              Você quer mudar de vida, mas não tem um plano claro. São tantas
+              informações que você não sabe qual é o primeiro passo.
+            </p>
+          </div>
+          <div class="problema-item">
+            <i class="fas fa-times-circle"></i>
+            <h3>Procrastinar Seus Sonhos?</h3>
+            <p>
+              Você tem objetivos, mas sempre deixa para depois. O tempo passa e
+              você continua no mesmo lugar, cheio de arrependimentos.
+            </p>
+          </div>
+        </div>
+        <div class="urgencia">
+          <h3>⚠️ A VERDADE DOLOROSA:</h3>
+          <p>
+            Cada dia que passa sem ação é um dia a menos para construir a vida
+            que você merece. Enquanto você hesita, outros estão agindo e
+            conquistando o que poderia ser seu!
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Chatbot Iframe (inicialmente escondido) -->
-    <iframe
-      id="chat-iframe"
-      src="https://www.chatbase.co/chatbot-iframe/8s25ll_WHKdn8BYbSSFnV"
-    ></iframe>
+    <!-- SOLUÇÃO SECTION -->
+    <section class="solucao">
+      <div class="container">
+        <h2 class="section-title">A Solução Está Aqui!</h2>
+        <div class="solucao-content">
+          <div class="solucao-text">
+            <h3>Imagine se você pudesse...</h3>
+            <ul class="beneficios-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Dominar os hábitos que os
+                milionários usam para construir riqueza
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Aplicar as estratégias dos
+                livros mais poderosos do mundo
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Ter um plano claro e prático
+                para os próximos 30 dias
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Desenvolver a mentalidade
+                dos grandes vencedores
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Construir sua reputação e
+                atrair oportunidades
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Sair da "corrida dos ratos"
+                de uma vez por todas
+              </li>
+            </ul>
+            <div class="destaque">
+              <h4>🎯 ESTE E-BOOK É SUA BÚSSOLA PARA O SUCESSO!</h4>
+              <p>
+                Baseado nos ensinamentos de "O Poder do Hábito", "Pai Rico, Pai
+                Pobre" e "As 48 Leis do Poder" - os livros que transformaram
+                milhões de vidas!
+              </p>
+            </div>
+          </div>
+          <div class="solucao-image">
+            <img
+              src="ebook_sucesso_capa.png"
+              alt="E-book Do Zero ao Sucesso"
+              class="book-3d"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Botão flutuante -->
-    <button id="chat-toggle" title="Abrir Chatbot">
-      <i class="fas fa-robot"></i>
-    </button>
+    <!-- CONTEÚDO SECTION -->
+    <section class="conteudo">
+      <div class="container">
+        <h2 class="section-title">O Que Você Vai Descobrir nos 30 Dias</h2>
+        <div class="semanas-container">
+          <div class="semana">
+            <h3>
+              <i class="fas fa-calendar-week"></i> Semana 1: Fundamentos do
+              Sucesso
+            </h3>
+            <ul>
+              <li>Dia 1: O Hábito Mestre que Muda Tudo</li>
+              <li>Dia 2: A Diferença Entre Ativos e Passivos</li>
+              <li>Dia 3: Como Construir uma Reputação Sólida</li>
+              <li>Dia 4: Educação Financeira Prática</li>
+              <li>Dia 5: A Arte de Atrair Atenção</li>
+              <li>Dia 6: O Loop do Hábito Revelado</li>
+              <li>Dia 7: Protegendo-se de Manipulações</li>
+            </ul>
+          </div>
+          <div class="semana">
+            <h3>
+              <i class="fas fa-calendar-week"></i> Semana 2: Poder e Influência
+            </h3>
+            <ul>
+              <li>Dia 8: A Arte da Persuasão</li>
+              <li>Dia 9: Gratificação Adiada</li>
+              <li>Dia 10: O Poder da Observação</li>
+              <li>Dia 11: Pague a Si Mesmo Primeiro</li>
+              <li>Dia 12: Escondendo Suas Intenções</li>
+              <li>Dia 13: O Desejo por Trás dos Hábitos</li>
+              <li>Dia 14: Mindset Empreendedor</li>
+            </ul>
+          </div>
+          <div class="semana">
+            <h3>
+              <i class="fas fa-calendar-week"></i> Semana 3: Estratégias
+              Avançadas
+            </h3>
+            <ul>
+              <li>Dia 15: Concentração Laser</li>
+              <li>Dia 16: Pequenos Ganhos, Grandes Resultados</li>
+              <li>Dia 17: Nunca Ofusque o Mestre</li>
+              <li>Dia 18: A Força da Vontade</li>
+              <li>Dia 19: Superando a Falsa Modéstia</li>
+              <li>Dia 20: Autodisciplina Como Pilar</li>
+              <li>Dia 21: A Lei da Ousadia</li>
+            </ul>
+          </div>
+          <div class="semana">
+            <h3>
+              <i class="fas fa-calendar-week"></i> Semana 4: Maestria e Legado
+            </h3>
+            <ul>
+              <li>Dia 22: Controle Emocional</li>
+              <li>Dia 23: Autossuficiência Total</li>
+              <li>Dia 24: Moldando Percepções</li>
+              <li>Dia 25: Construindo Redes de Poder</li>
+              <li>Dia 26: Paciência Estratégica</li>
+              <li>Dia 27: O Caminho para a Maestria</li>
+              <li>Dia 28: Criando Escassez e Valor</li>
+              <li>Dia 29: O Elemento Surpresa</li>
+              <li>Dia 30: Construindo Seu Legado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>&copy; 2025 Alfa Mindset. Todos os direitos reservados.</footer>
+    <!-- AUTORIDADE SECTION -->
+    <section class="autoridade">
+      <div class="container">
+        <h2 class="section-title">Por Que Este E-book é Diferente?</h2>
+        <div class="autoridade-content">
+          <div class="autoridade-item">
+            <i class="fas fa-book"></i>
+            <h3>Baseado em Clássicos Comprovados</h3>
+            <p>
+              Cada capítulo é fundamentado nos ensinamentos de "O Poder do
+              Hábito", "Pai Rico, Pai Pobre" e "As 48 Leis do Poder" - livros
+              que venderam milhões de cópias mundialmente.
+            </p>
+          </div>
+          <div class="autoridade-item">
+            <i class="fas fa-brain"></i>
+            <h3>Ciência + Estratégia</h3>
+            <p>
+              Combina neurociência dos hábitos, psicologia do poder e
+              estratégias financeiras comprovadas em um método único e prático.
+            </p>
+          </div>
+          <div class="autoridade-item">
+            <i class="fas fa-target"></i>
+            <h3>Plano de Ação Diário</h3>
+            <p>
+              Não é só teoria! Cada dia tem um desafio prático para você aplicar
+              imediatamente e ver resultados reais.
+            </p>
+          </div>
+          <div class="autoridade-item">
+            <i class="fas fa-rocket"></i>
+            <h3>Resultados em 30 Dias</h3>
+            <p>
+              Um mês para transformar completamente sua mentalidade, seus
+              hábitos e sua trajetória de vida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-      const btn = document.getElementById('chat-toggle')
-      const chat = document.getElementById('chat-iframe')
+    <!-- DEPOIMENTOS SECTION -->
+    <section class="depoimentos">
+      <div class="container">
+        <h2 class="section-title">O Que Dizem Quem Já Transformou a Vida</h2>
+        <div class="depoimentos-grid">
+          <div class="depoimento">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              "Em 30 dias, consegui organizar minhas finanças e criar meu
+              primeiro fluxo de renda passiva. O capítulo sobre ativos vs
+              passivos mudou minha vida!"
+            </p>
+            <div class="autor">
+              <strong>Marina Silva</strong>
+              <span>Empresária, São Paulo</span>
+            </div>
+          </div>
+          <div class="depoimento">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              "Aplicando as leis do poder, consegui uma promoção que buscava há
+              anos. O segredo estava na forma como eu me posicionava!"
+            </p>
+            <div class="autor">
+              <strong>Carlos Mendes</strong>
+              <span>Gerente de Vendas, Rio de Janeiro</span>
+            </div>
+          </div>
+          <div class="depoimento">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              "Os hábitos mestres realmente funcionam! Perdi 15kg, aumentei
+              minha produtividade em 300% e ainda sobra tempo para a família."
+            </p>
+            <div class="autor">
+              <strong>Ana Costa</strong>
+              <span>Advogada, Belo Horizonte</span>
+            </div>
+          </div>
+          <div class="depoimento">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              "Saí do zero e criei minha empresa em 6 meses. O mindset
+              empreendedor que aprendi aqui foi fundamental!"
+            </p>
+            <div class="autor">
+              <strong>Roberto Lima</strong>
+              <span>CEO Startup Tech, Florianópolis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      btn.addEventListener('click', () => {
-        if (chat.style.display === 'none' || chat.style.display === '') {
-          chat.style.display = 'block'
-        } else {
-          chat.style.display = 'none'
-        }
-      })
-    </script>
+    <!-- OFERTA SECTION -->
+    <section class="oferta" id="oferta">
+      <div class="container">
+        <div class="oferta-box">
+          <h2 class="oferta-title">
+            🔥 OFERTA ESPECIAL POR TEMPO LIMITADO! 🔥
+          </h2>
+
+          <div class="preco-container">
+            <div class="preco-original">
+              <span class="label">Valor Normal:</span>
+              <span class="valor">R$ 197,00</span>
+            </div>
+            <div class="preco-promocional">
+              <span class="label">HOJE APENAS:</span>
+              <span class="valor">R$ 47,00</span>
+              <span class="desconto">76% OFF</span>
+            </div>
+          </div>
+
+          <div class="bonus-section">
+            <h3>🎁 BÔNUS EXCLUSIVOS (Valor: R$ 297)</h3>
+            <div class="bonus-list">
+              <div class="bonus-item">
+                <i class="fas fa-gift"></i>
+                <div>
+                  <strong>BÔNUS #1:</strong> Planilha de Controle Financeiro
+                  Pessoal
+                  <span>(Valor: R$ 97)</span>
+                </div>
+              </div>
+              <div class="bonus-item">
+                <i class="fas fa-gift"></i>
+                <div>
+                  <strong>BÔNUS #2:</strong> Guia Rápido: 10 Hábitos dos
+                  Milionários
+                  <span>(Valor: R$ 67)</span>
+                </div>
+              </div>
+              <div class="bonus-item">
+                <i class="fas fa-gift"></i>
+                <div>
+                  <strong>BÔNUS #3:</strong> Checklist Diário de Produtividade
+                  <span>(Valor: R$ 47)</span>
+                </div>
+              </div>
+              <div class="bonus-item">
+                <i class="fas fa-gift"></i>
+                <div>
+                  <strong>BÔNUS #4:</strong> Acesso ao Grupo VIP no Telegram
+                  <span>(Valor: R$ 97)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="urgencia-container">
+            <div class="contador">
+              <h4>⏰ Esta oferta expira em:</h4>
+              <div class="countdown">
+                <div class="time-unit">
+                  <span id="hours">23</span>
+                  <label>Horas</label>
+                </div>
+                <div class="time-unit">
+                  <span id="minutes">59</span>
+                  <label>Minutos</label>
+                </div>
+                <div class="time-unit">
+                  <span id="seconds">59</span>
+                  <label>Segundos</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-final">
+            <a href="#" class="cta-button-final pulse">
+              <i class="fas fa-credit-card"></i>
+              QUERO GARANTIR MINHA TRANSFORMAÇÃO AGORA!
+              <span>Por apenas R$ 47,00</span>
+            </a>
+            <div class="garantias">
+              <div class="garantia">
+                <i class="fas fa-shield-alt"></i>
+                <span>Garantia de 30 dias</span>
+              </div>
+              <div class="garantia">
+                <i class="fas fa-lock"></i>
+                <span>Pagamento 100% seguro</span>
+              </div>
+              <div class="garantia">
+                <i class="fas fa-download"></i>
+                <span>Acesso imediato</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+      <div class="container">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Como recebo o e-book após a compra?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Imediatamente após a confirmação do pagamento, você receberá um
+                e-mail com o link para download. O acesso é instantâneo!
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Funciona mesmo em 30 dias?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Sim! O método é baseado em livros que já transformaram milhões
+                de vidas. Se você seguir o plano diário, verá mudanças
+                significativas em 30 dias.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>E se eu não ficar satisfeito?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Oferecemos garantia total de 30 dias. Se não ficar 100%
+                satisfeito, devolvemos seu dinheiro sem perguntas.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Preciso de conhecimento prévio?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Não! O e-book foi criado para iniciantes. Começamos do zero e te
+                levamos ao sucesso passo a passo.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Os bônus são realmente grátis?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Sim! Todos os bônus são inclusos sem custo adicional. É nossa
+                forma de garantir seu sucesso total.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL SECTION -->
+    <section class="cta-final-section">
+      <div class="container">
+        <h2>Não Deixe Sua Vida Passar em Branco!</h2>
+        <p>
+          Você tem duas escolhas: continuar onde está ou dar o primeiro passo
+          para a transformação que você merece.
+        </p>
+        <div class="escolha-container">
+          <div class="escolha escolha-ruim">
+            <h3>❌ Sem Este E-book:</h3>
+            <ul>
+              <li>Continuar na mesma situação</li>
+              <li>Ver outros prosperando</li>
+              <li>Adiar seus sonhos</li>
+              <li>Viver de arrependimentos</li>
+            </ul>
+          </div>
+          <div class="escolha escolha-boa">
+            <h3>✅ Com Este E-book:</h3>
+            <ul>
+              <li>Transformação em 30 dias</li>
+              <li>Hábitos de sucesso</li>
+              <li>Liberdade financeira</li>
+              <li>Vida dos seus sonhos</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#oferta" class="cta-button-final pulse">
+          <i class="fas fa-rocket"></i>
+          SIM! QUERO TRANSFORMAR MINHA VIDA AGORA!
+        </a>
+        <p class="ultimo-aviso">
+          ⚠️ Esta oferta pode sair do ar a qualquer momento!
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Do Zero ao Sucesso em 30 Dias. Todos os direitos
+          reservados.
+        </p>
+        <p>
+          Este produto não garante resultados. Os resultados podem variar de
+          pessoa para pessoa.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
